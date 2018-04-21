@@ -13,7 +13,7 @@ class FinanceInfo extends Component {
     }
 
     componentWillMount(){
-        const actDate = new Date().toISOString();
+        /*const actDate = new Date().toISOString();*/
         let date = new Date();
         date.setUTCDate(date.getMonth() - 1);
         date = date.toISOString();
@@ -254,7 +254,7 @@ class FinanceInfo extends Component {
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">IPC</span>
+                        <span className="statcard-desc">ME</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
@@ -268,35 +268,35 @@ class FinanceInfo extends Component {
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">ALFA</span>
+                        <span className="statcard-desc">ALFAA</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">WALMART</span>
+                        <span className="statcard-desc">WALMEX</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">AMX</span>
+                        <span className="statcard-desc">AMXL</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">FEMSA</span>
+                        <span className="statcard-desc">FEMSAUBD</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">KOF</span>
+                        <span className="statcard-desc">KOFL</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
@@ -310,21 +310,21 @@ class FinanceInfo extends Component {
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">BIMBO</span>
+                        <span className="statcard-desc">BIMBOA</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">LIVERPOOL</span>
+                        <span className="statcard-desc">LIVEPOLC-1</span>
                     </div>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             758
                             <small className="delta-indicator delta-negative">1.3%</small>
                         </h3>
-                        <span className="statcard-desc">TELEVISA</span>
+                        <span className="statcard-desc">TLEVISACPO</span>
                     </div>
                 </marquee>
 

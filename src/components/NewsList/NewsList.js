@@ -9,12 +9,11 @@ const NewsList = ({ news }) => {
         :
             <ul>
                 {
-                    news.articles.map(current => (
-                        <New {...current} />
+                    news.articles.map((current, i) => (
+                        <New key={i} {...current} />
                     ))
 
                 }
-                {console.log(news.articles)}
             </ul>
     )
 };

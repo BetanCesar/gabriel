@@ -21,7 +21,6 @@ class News extends Component {
 
     render() {
         let date = new Date();
-        console.log(date);
         let options = {month: 'long'};
         let fecha = date.getUTCDate() + " de " + date.toLocaleDateString('es-Mx', options) + " de " + date.getFullYear();
         return (
