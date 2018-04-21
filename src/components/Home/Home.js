@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import FinanceInfo from "../FinanceInfo";
 
 import News from "../News/News";
+import HistoryChart from "../HistoryChart";
 
 
 class Home extends Component {
@@ -19,7 +20,7 @@ class Home extends Component {
                             <h2 class="dashhead-title">Índice de Precios y Cotizaciones</h2>
                         </div>
                     </div>
-
+                    <HistoryChart/>
                 </div>
                 <News/>
             </div>
