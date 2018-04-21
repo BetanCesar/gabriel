@@ -1,19 +1,26 @@
 .financeInfoContainer{
     background-color: transparent;
-    overflow: scroll;
-    display: flex;
-    flex-wrap: nowrap;
+    width: 100%;
+    margin-right: 20px;
 }
 
-@-webkit-keyframes move {
-    0% {
-        margin-left: 0;
-    }
-    100% {
-        margin-left: 100%;
-    }
-}
 
 .financeCard{
     display: inline-block;
+}
+
+.marqueeDiv{
+    animation: marquee 30s linear infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.marqueeDiv:hover{
+    animation-play-state: paused
+}
+
+@keyframes marquee {
+    0%   { transform: translate(100%, 0); }
+    100% { transform: translate(-100%, 0); }
 }
