@@ -11,12 +11,10 @@ class App extends Component {
           <div className="App">
               <div className="with-top-navbar">
                   <Header/>
-                  <div className="container-fluid container-fluid-spacious">
-                      <Switch>
-                          <Route exact path="/" component={Home}/>
-                          <Redirect from='*' to='/' />
-                      </Switch>
-                  </div>
+                  <Switch>
+                      <Route exact path="/" component={Home}/>
+                      <Redirect from='*' to='/' />
+                  </Switch>
               </div>
           </div>
         </BrowserRouter>
