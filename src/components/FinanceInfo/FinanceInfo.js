@@ -228,104 +228,303 @@ class FinanceInfo extends Component {
 
         return (
             <div className="col-sm-12 financeInfoContainer">
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        {oil}
-                        <small className="delta-indicator delta-positive">5%</small>
-                    </h3>
-                    <span className="statcard-desc">USD/MXN</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        {gold}
-                        <small className={goldPercentageStyle.join(" ")}>{goldPercentage}%</small>
-                    </h3>
-                    <span className="statcard-desc">Oro</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        {oil}
-                        <small className={oilPercentageStyle.join(" ")}>{oilPercentage}%</small>
-                    </h3>
-                    <span className="statcard-desc">Petróleo</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">IPC</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">AC</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">ALFA</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">WALMART</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">AMX</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">FEMSA</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">KOF</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">ALSEA</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">BIMBO</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">LIVERPOOL</span>
-                </div>
-                <div className="statcard p-a-md financeCard">
-                    <h3 className="statcard-number">
-                        758
-                        <small className="delta-indicator delta-negative">1.3%</small>
-                    </h3>
-                    <span className="statcard-desc">TELEVISA</span>
-                </div>
+                <marquee>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {oil}
+                            <small className="delta-indicator delta-positive">5%</small>
+                        </h3>
+                        <span className="statcard-desc">USD/MXN</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {gold}
+                            <small className={goldPercentageStyle.join(" ")}>{goldPercentage}%</small>
+                        </h3>
+                        <span className="statcard-desc">Oro</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {oil}
+                            <small className={oilPercentageStyle.join(" ")}>{oilPercentage}%</small>
+                        </h3>
+                        <span className="statcard-desc">Petróleo</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">IPC</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">AC</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">ALFA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">WALMART</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">AMX</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">FEMSA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">KOF</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">ALSEA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">BIMBO</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">LIVERPOOL</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">TELEVISA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {oil}
+                            <small className="delta-indicator delta-positive">5%</small>
+                        </h3>
+                        <span className="statcard-desc">USD/MXN</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {gold}
+                            <small className={goldPercentageStyle.join(" ")}>{goldPercentage}%</small>
+                        </h3>
+                        <span className="statcard-desc">Oro</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {oil}
+                            <small className={oilPercentageStyle.join(" ")}>{oilPercentage}%</small>
+                        </h3>
+                        <span className="statcard-desc">Petróleo</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">IPC</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">AC</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">ALFA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">WALMART</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">AMX</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">FEMSA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">KOF</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">ALSEA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">BIMBO</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">LIVERPOOL</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">TELEVISA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {oil}
+                            <small className="delta-indicator delta-positive">5%</small>
+                        </h3>
+                        <span className="statcard-desc">USD/MXN</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {gold}
+                            <small className={goldPercentageStyle.join(" ")}>{goldPercentage}%</small>
+                        </h3>
+                        <span className="statcard-desc">Oro</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            {oil}
+                            <small className={oilPercentageStyle.join(" ")}>{oilPercentage}%</small>
+                        </h3>
+                        <span className="statcard-desc">Petróleo</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">IPC</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">AC</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">ALFA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">WALMART</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">AMX</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">FEMSA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">KOF</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">ALSEA</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">BIMBO</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">LIVERPOOL</span>
+                    </div>
+                    <div className="statcard p-a-md financeCard">
+                        <h3 className="statcard-number">
+                            758
+                            <small className="delta-indicator delta-negative">1.3%</small>
+                        </h3>
+                        <span className="statcard-desc">TELEVISA</span>
+                    </div>
+                </marquee>
+
             </div>
         );
     }
