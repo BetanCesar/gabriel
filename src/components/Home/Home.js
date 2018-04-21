@@ -6,6 +6,7 @@ import FinanceInfo from "../FinanceInfo";
 import News from "../News/News";
 import HistoryChart from "../HistoryChart";
 import Proyections from "../Proyections";
+import GeneralStats from "../GeneralStats/GeneralStats";
 
 
 class Home extends Component {
@@ -18,10 +19,10 @@ class Home extends Component {
                     <div className="hr-divider m-t m-b-md">
                         <h3 className="hr-divider-content hr-divider-heading">Historial</h3>
                     </div>
-                    <div class="dashhead m-t-md">
-                        <div class="dashhead-titles">
-                            <h6 class="dashhead-subtitle">Dashboards</h6>
-                            <h2 class="dashhead-title companySelect col-sm-6">Índice de Precios y Cotizaciones</h2>
+                    <div className="dashhead m-t-md">
+                        <div className="dashhead-titles">
+                            <h6 className="dashhead-subtitle">Dashboards</h6>
+                            <h2 className="dashhead-title companySelect col-sm-6">Índice de Precios y Cotizaciones</h2>
                             <div className="hr-divider m-y-md predictionsDiv col-sm-6">
                                 <ul className="nav nav-pills hr-divider-content hr-divider-nav" role="tablist">
                                     <li className="active" role="presentation">
@@ -49,6 +50,12 @@ class Home extends Component {
                         <h3 className="hr-divider-content hr-divider-heading">Proyecciones</h3>
                     </div>
                     <Proyections/>
+                </div>
+                <div className="row col-sm-12">
+                    <div className="hr-divider m-t m-b-md">
+                        <h3 className="hr-divider-content hr-divider-heading">Información General</h3>
+                    </div>
+                    <GeneralStats/>
                 </div>
             </div>
         );
