@@ -26,15 +26,6 @@ class Header extends Component {
                             <li className="active">
                                 <Link to={'/'}>Inicio</Link>
                             </li>
-                            <li >
-                                <Link to={'/'}>Vete</Link>
-                            </li>
-                            <li >
-                                <Link to={'/'}>ala</Link>
-                            </li>
-                            <li >
-                                <Link to={'/'}>versh?</Link>
-                            </li>
                         </ul>
                     </div>
                 </div>

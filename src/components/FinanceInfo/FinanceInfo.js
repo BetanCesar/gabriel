@@ -228,7 +228,7 @@ class FinanceInfo extends Component {
 
         return (
             <div className="col-sm-12 financeInfoContainer">
-                <div className="marqueeDiv">
+                <marquee>
                     <div className="statcard p-a-md financeCard">
                         <h3 className="statcard-number">
                             {oil}
@@ -327,7 +327,7 @@ class FinanceInfo extends Component {
                         </h3>
                         <span className="statcard-desc">TELEVISA</span>
                     </div>
-                </div>
+                </marquee>
 
             </div>
         );

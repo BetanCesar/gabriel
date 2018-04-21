@@ -23,7 +23,7 @@ class HistoryChart extends Component {
                        backgroundColor: '#252830',
                        color:'#FFF',
                        is3D: true,
-                       chartArea: {'width': '75%', 'height': '80%'},
+                       chartArea: {'width': '90%', 'height': '80%'},
                        titleTextStyle: { color: '#fff' },
                        hAxis: {
                            textStyle:{color: '#FFF'}
@@ -40,7 +40,7 @@ class HistoryChart extends Component {
                    }}
                    graph_id="ScatterChart"
                    width="100%"
-                   height="400px"
+                   height="500px"
                    legend_toggle
 
                />

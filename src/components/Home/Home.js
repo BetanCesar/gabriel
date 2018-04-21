@@ -5,6 +5,7 @@ import FinanceInfo from "../FinanceInfo";
 
 import News from "../News/News";
 import HistoryChart from "../HistoryChart";
+import Proyections from "../Proyections";
 
 
 class Home extends Component {
@@ -20,13 +21,31 @@ class Home extends Component {
                     <div class="dashhead m-t-md">
                         <div class="dashhead-titles">
                             <h6 class="dashhead-subtitle">Dashboards</h6>
-                            <h2 class="dashhead-title">Índice de Precios y Cotizaciones</h2>
+                            <h2 class="dashhead-title companySelect col-sm-6">Índice de Precios y Cotizaciones</h2>
+                            <div className="hr-divider m-y-md predictionsDiv col-sm-6">
+                                <ul className="nav nav-pills hr-divider-content hr-divider-nav" role="tablist">
+                                    <li className="active" role="presentation">
+                                        <a href="#sales" role="tab" data-toggle="tab" aria-controls="sales">Semana</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#inventory" role="tab" data-toggle="tab"
+                                           aria-controls="inventory">Mes</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#profit" role="tab" data-toggle="tab" aria-controls="profit">6 meses</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#profit" role="tab" data-toggle="tab" aria-controls="profit">Año</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <HistoryChart/>
                     <div className="hr-divider m-t m-b-md">
                         <h3 className="hr-divider-content hr-divider-heading">Proyecciones</h3>
                     </div>
+                    <Proyections/>
                 </div>
                 <News/>
             </div>
