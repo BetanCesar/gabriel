@@ -21,15 +21,14 @@ class News extends Component {
 
     render() {
         let date = new Date();
-        console.log(date);
         let options = {month: 'long'};
         let fecha = date.getUTCDate() + " de " + date.toLocaleDateString('es-Mx', options) + " de " + date.getFullYear();
         return (
             <div id="news-container" className="col-sm-3">
-                <div class="dashhead m-t-md">
-                    <div class="dashhead-titles">
-                        <h6 class="dashhead-subtitle">{fecha}</h6>
-                        <h2 class="dashhead-title">Noticias</h2>
+                <div className="dashhead m-t-md">
+                    <div className="dashhead-titles">
+                        <h6 className="dashhead-subtitle">{fecha}</h6>
+                        <h2 className="dashhead-title">Noticias</h2>
                     </div>
                 </div>
                 <NewsList news={this.state.news}/>
