@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './FinanceInfo.css';
 import axios from 'axios';
-import googleFinance from 'google-finance';
 
 
 class FinanceInfo extends Component {

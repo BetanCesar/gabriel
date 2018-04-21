@@ -18,7 +18,7 @@ class Header extends Component {
                         </button>
                         <Link className="navbar-brand navbar-brand-emphasized" to={'/'}>
                             <span className="icon icon-calculator navbar-brand-icon"></span>
-                            GABRIEL
+                            G.A.B.O.
                         </Link>
                     </div>
                     <div id="navbar" className="navbar-collapse collapse">

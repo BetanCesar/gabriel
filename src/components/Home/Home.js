@@ -42,12 +42,14 @@ class Home extends Component {
                         </div>
                     </div>
                     <HistoryChart/>
+                </div>
+                <News/>
+                <div className="row col-sm-12">
                     <div className="hr-divider m-t m-b-md">
                         <h3 className="hr-divider-content hr-divider-heading">Proyecciones</h3>
                     </div>
                     <Proyections/>
                 </div>
-                <News/>
             </div>
         );
     }
