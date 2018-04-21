@@ -16,29 +16,24 @@ class Header extends Component {
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand navbar-brand-emphasized" href="#">
-                            <span class="icon icon-leaf navbar-brand-icon"></span>
+                        <Link className="navbar-brand navbar-brand-emphasized" to={'/'}>
+                            <span class="icon icon-calculator navbar-brand-icon"></span>
                             GABRIEL
-                        </a>
+                        </Link>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active">
-                                <a href="#">Order History</a>
+                                <Link to={'/'}>Inicio</Link>
                             </li>
                             <li >
-                                <a href="#">Fluid layout</a>
+                                <Link to={'/'}>Vete</Link>
                             </li>
                             <li >
-                                <a href="#">Icon nav</a>
+                                <Link to={'/'}>ala</Link>
                             </li>
                             <li >
-                                <a href="#">
-                                    Docs
-                                </a>
-                            </li>
-                            <li >
-                                <a href="#">Light UI</a>
+                                <Link to={'/'}>versh?</Link>
                             </li>
                         </ul>
                     </div>

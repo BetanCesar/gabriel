@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 
 class App extends Component {
   render() {
@@ -11,7 +12,10 @@ class App extends Component {
               <div className="with-top-navbar">
                   <Header/>
                   <div className="container-fluid container-fluid-spacious">
-
+                      <Switch>
+                          <Route exact path="/" component={Home}/>
+                          <Redirect from='*' to='/' />
+                      </Switch>
                   </div>
               </div>
           </div>
