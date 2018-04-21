@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a99ca032-7b1a-4b7a-967a-ba26429f61b8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FinanceInfo/FinanceInfo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FinanceInfo/FinanceInfo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FinanceInfo/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/tablesorter.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/toolkit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FinanceInfo/FinanceInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FinanceInfo/FinanceInfo.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -109,8 +99,8 @@
       <file leaf-file-name="FinanceInfo.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/FinanceInfo/FinanceInfo.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="69" column="44" lean-forward="true" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+            <state relative-caret-position="446">
+              <caret line="238" column="52" lean-forward="true" selection-start-line="238" selection-start-column="52" selection-end-line="238" selection-end-column="52" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -122,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <caret line="19" selection-start-line="19" selection-end-line="19" />
             </state>
           </provider>
         </entry>
@@ -149,7 +139,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>toolki</find>
+      <find>alexis</find>
     </findStrings>
+    <replaceStrings>
+      <replace>televisa</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -279,12 +273,12 @@
       <updated>1524263915133</updated>
       <workItem from="1524263916691" duration="345000" />
       <workItem from="1524264606377" duration="4546000" />
-      <workItem from="1524277062783" duration="7480000" />
+      <workItem from="1524277062783" duration="11654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12371000" />
+    <option name="totallyTimeSpent" value="16545000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -294,7 +288,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32969698" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -473,7 +467,7 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
@@ -489,8 +483,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FinanceInfo/FinanceInfo.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="69" column="44" lean-forward="true" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
+        <state relative-caret-position="446">
+          <caret line="238" column="52" lean-forward="true" selection-start-line="238" selection-start-column="52" selection-end-line="238" selection-end-column="52" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
