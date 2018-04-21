@@ -1,0 +1,40 @@
+#news-container{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 40px;
+    background-color: #fafafa;
+    border-radius: 1rem;
+    color: #434857;
+    height: 580px;
+}
+
+#news-container .dashhead-titles{
+    margin-left: 8px;
+}
+
+#news-container .dashhead {
+/*    position: fixed;
+    width: calc(25% - 40px);
+    height: 8rem;
+    background-color: transparent;
+    background: linear-gradient(to bottom, white 80%, rgba(255,255,255,0.1));*/
+}
+
+#news-container h2{
+    color: #0a0b0d;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+#news-container h1{
+    color: #0a0b0d;
+}
+
+#news-container ul {
+    list-style: none;
+    padding: 9px;
+    overflow:hidden;
+    height: 488px;
+    overflow-y:scroll;
+    /*margin-top: 95px;*/
+}

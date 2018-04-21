@@ -3,6 +3,8 @@ import './Home.css';
 import { Link } from 'react-router-dom';
 import FinanceInfo from "../FinanceInfo";
 
+import News from "../News/News";
+
 
 class Home extends Component {
 
@@ -19,14 +21,7 @@ class Home extends Component {
                     </div>
 
                 </div>
-                <div className="col-sm-3">
-                    <div class="dashhead m-t-md">
-                        <div class="dashhead-titles">
-                            <h6 class="dashhead-subtitle">20 de abril de 2018</h6>
-                            <h2 class="dashhead-title">Noticias</h2>
-                        </div>
-                    </div>
-                </div>
+                <News/>
             </div>
         );
     }
