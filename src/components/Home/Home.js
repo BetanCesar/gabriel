@@ -14,6 +14,9 @@ class Home extends Component {
             <div className="container-fluid container-fluid-spacious">
                <FinanceInfo/>
                 <div className="col-sm-9">
+                    <div className="hr-divider m-t m-b-md">
+                        <h3 className="hr-divider-content hr-divider-heading">Historial</h3>
+                    </div>
                     <div class="dashhead m-t-md">
                         <div class="dashhead-titles">
                             <h6 class="dashhead-subtitle">Dashboards</h6>
@@ -21,6 +24,9 @@ class Home extends Component {
                         </div>
                     </div>
                     <HistoryChart/>
+                    <div className="hr-divider m-t m-b-md">
+                        <h3 className="hr-divider-content hr-divider-heading">Proyecciones</h3>
+                    </div>
                 </div>
                 <News/>
             </div>
