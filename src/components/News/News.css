@@ -5,7 +5,7 @@
     background-color: #1a1c22;
     border-radius: 1rem;
     color: #fafafa;
-    height: 580px;
+    height: 679px;
 }
 
 #news-container .dashhead-titles{
@@ -34,7 +34,13 @@
     list-style: none;
     padding: 9px;
     overflow:hidden;
-    height: 488px;
+    height: 588px;
     overflow-y:scroll;
     /*margin-top: 95px;*/
+}
+
+@media only screen and (max-width: 768px) {
+    #news-container .dashhead-titles{
+        margin-top: 30px;
+    }
 }
