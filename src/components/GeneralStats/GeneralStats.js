@@ -7,26 +7,32 @@ import axios from 'axios';
 class GeneralStats extends Component {
     constructor(props) {
         super(props);
-        this.state = {oil:[],gold:[], usd:[], ipc:[]};
-        this.calculatePercentage = this.calculatePercentage.bind(this)
+        this.state = {oil:[],gold:[], usd:[], ipc:[], apiKey:"http://192.168.1.123:3500/api"};
+        this.calculatePercentage = this.calculatePercentage.bind(this);
     }
 
     componentWillMount(){
-        const actDate = new Date().toISOString();
-        let date = new Date();
-        date.setUTCDate(date.getMonth() - 1);
-        date = date.toISOString();
-        date = date.substring(0,date.indexOf('T'));
+
         //-----------Oil-------------
-        axios.get("https://www.quandl.com/api/v3/datasets/OPEC/ORB.json?api_key=2KXtZBj4qLfGoFsNQ7zB&start_date=" + date)
+        axios.get(this.state.apiKey + "/getIndex?time=one-month&index=oil")
             .then(res => {
-                this.setState({oil:res.data.dataset.data});
+                this.setState({oil:res.data});
             }).catch(this.setState({oil: null}));
         //-----------Gold-------------
-        axios.get("https://www.quandl.com/api/v3/datasets/WGC/GOLD_DAILY_USD.json?api_key=2KXtZBj4qLfGoFsNQ7zB&start_date=" + date)
+        axios.get(this.state.apiKey + "/getIndex?time=one-month&index=gold")
             .then(res => {
-                this.setState({gold:res.data.dataset.data});
+                this.setState({gold:res.data});
             }).catch(this.setState({gold: null}));
+        //-----------USDMXN-------------
+        axios.get(this.state.apiKey + "/getIndex?time=one-month&index=USDMXN")
+            .then(res => {
+                this.setState({usd:res.data});
+            }).catch(this.setState({usd: null}));
+        //-----------IPC-------------
+        axios.get(this.state.apiKey + "/getIndex?time=one-month&index=IPC")
+            .then(res => {
+                this.setState({ipc:res.data});
+            }).catch(this.setState({ipc: null}));
 
     }
 
@@ -44,11 +50,10 @@ class GeneralStats extends Component {
             this.state.oil.forEach(function(oil) {
                 oilData.push(oil);
             });
-            oilData = oilData.reverse();
             oilData =[['Day', 'Value'], ...oilData];
-            oil = this.state.oil[0][1];
-            oilPercentage = this.calculatePercentage(this.state.oil[1][1],this.state.oil[0][1]);
-            if(this.state.oil[0][1] > this.state.oil[1][1]) {
+            oil = this.state.oil[this.state.oil.length-1][1];
+            oilPercentage = this.calculatePercentage(this.state.oil[this.state.oil.length-2][1],this.state.oil[this.state.oil.length-1][1]);
+            if(this.state.oil[this.state.oil.length-1][1] > this.state.oil[this.state.oil.length-2][1]) {
                 oilPercentageStyle.push("label-success");
             }else {
                 oilPercentageStyle.push("label-danger");
@@ -63,14 +68,51 @@ class GeneralStats extends Component {
             this.state.gold.forEach(function(gold) {
                 goldData.push(gold);
             });
-            goldData = goldData.reverse();
             goldData =[['Day', 'Value'], ...goldData];
-            gold = this.state.gold[0][1];
-            goldPercentage = this.calculatePercentage(this.state.gold[1][1],this.state.gold[0][1]);
-            if(this.state.gold[0][1] > this.state.gold[1][1]) {
+            gold = this.state.gold[this.state.gold.length-1][1];
+            goldPercentage = this.calculatePercentage(this.state.gold[this.state.gold.length-2][1],this.state.gold[this.state.gold.length-1][1]);
+            if(this.state.gold[this.state.gold.length-1][1] > this.state.gold[this.state.gold.length-2][1]) {
                 goldPercentageStyle.push("label-success");
             }else {
                 goldPercentageStyle.push("label-danger");
+            }
+        }
+
+        //--------------usd----------------
+        let usd = 0;
+        let usdPercentage = 0;
+        const usdPercentageStyle = ["label"];
+        let usdData = [];
+        if(this.state.usd){
+            this.state.usd.forEach(function(usd) {
+                usdData.push(usd);
+            });
+            usdData =[['Day', 'Value'], ...usdData];
+            usd = this.state.usd[this.state.usd.length-1][1];
+            usdPercentage = this.calculatePercentage(this.state.usd[this.state.usd.length-2][1],this.state.usd[this.state.usd.length-1][1]);
+            if(this.state.usd[this.state.usd.length-1][1] > this.state.usd[this.state.usd.length-2][1]) {
+                usdPercentageStyle.push("label-success");
+            }else {
+                usdPercentageStyle.push("label-danger");
+            }
+        }
+
+        //--------------IPC----------------
+        let ipc = 0;
+        let ipcPercentage = 0;
+        const ipcPercentageStyle = ["label"];
+        let ipcData = [];
+        if(this.state.ipc){
+            this.state.ipc.forEach(function(ipc) {
+                ipcData.push(ipc);
+            });
+            ipcData =[['Day', 'Value'], ...ipcData];
+            ipc = this.state.ipc[this.state.ipc.length-1][1];
+            ipcPercentage = this.calculatePercentage(this.state.ipc[this.state.ipc.length-2][1],this.state.ipc[this.state.ipc.length-1][1]);
+            if(this.state.ipc[this.state.ipc.length-1][1] > this.state.ipc[this.state.ipc.length-2][1]) {
+                ipcPercentageStyle.push("label-success");
+            }else {
+                ipcPercentageStyle.push("label-danger");
             }
         }
         return (
@@ -175,20 +217,14 @@ class GeneralStats extends Component {
                             <div className="p-a">
                                 <span className="statcard-desc">USDMXN</span>
                                 <h2 className="statcard-number">
-                                    1,293
-                                    <small className="label label-success">6.75%</small>
+                                    {usd}
+                                    <small className={usdPercentageStyle.join(" ")}>{usdPercentage}%</small>
                                 </h2>
                             </div>
                             <Chart
 
                                 chartType="AreaChart"
-                                data={[
-                                    ['Year', 'Sales', 'Expenses'],
-                                    ['2013',  1000,      400],
-                                    ['2014',  1170,      460],
-                                    ['2015',  660,       1120],
-                                    ['2016',  1030,      540]
-                                ]}
+                                data={usdData}
                                 options={{
                                     colors:['#1ca8dd'],
                                     backgroundColor: '#252830',
@@ -228,20 +264,14 @@ class GeneralStats extends Component {
                             <div className="p-a">
                                 <span className="statcard-desc">IPC</span>
                                 <h2 className="statcard-number">
-                                    758
-                                    <small className="label label-success">1.3%</small>
+                                    {ipc}
+                                    <small className={ipcPercentageStyle.join(" ")}>{ipcPercentage}%</small>
                                 </h2>
                             </div>
                             <Chart
 
                                 chartType="AreaChart"
-                                data={[
-                                    ['Year', 'Sales', 'Expenses'],
-                                    ['2013',  1000,      400],
-                                    ['2014',  1170,      460],
-                                    ['2015',  660,       1120],
-                                    ['2016',  1030,      540]
-                                ]}
+                                data={ipcData}
                                 options={{
                                     colors:['#1ca8dd'],
                                     backgroundColor: '#252830',
