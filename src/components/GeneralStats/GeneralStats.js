@@ -7,7 +7,7 @@ import axios from 'axios';
 class GeneralStats extends Component {
     constructor(props) {
         super(props);
-        this.state = {oil:[],gold:[], usd:[], ipc:[], apiKey:"http://192.168.1.123:3500/api"};
+        this.state = {oil:[],gold:[], usd:[], ipc:[], apiKey:"http://localhost:3500/api"};
         this.calculatePercentage = this.calculatePercentage.bind(this);
     }
 

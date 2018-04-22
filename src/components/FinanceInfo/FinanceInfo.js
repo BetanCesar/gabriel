@@ -8,7 +8,7 @@ class FinanceInfo extends Component {
     constructor(props) {
         super(props);
         this.state = {oil:[],gold:[], usd:[], ipc:[],ac:[], alfa:[], walmart:[], amx:[], femsa:[], kof:[], alsea:[],
-            bimbo:[], liverpool:[], televisa:[], apiKey:"http://192.168.1.123:3500/api"};
+            bimbo:[], liverpool:[], televisa:[], apiKey:"http://localhost:3500/api"};
         this.calculatePercentage = this.calculatePercentage.bind(this)
     }
 

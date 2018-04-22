@@ -6,6 +6,7 @@ import News from "../News/News";
 import HistoryChart from "../HistoryChart";
 import Proyections from "../Proyections";
 import GeneralStats from "../GeneralStats/GeneralStats";
+import axios from "axios/index";
 
 
 class Home extends Component {
@@ -43,11 +44,13 @@ class Home extends Component {
         this.setState({siglas: sigla});
     }
 
+
     handleClick(param, text) {
         this.setState({period: text});
     }
 
     render() {
+        console.log(this.state.siglas);
         const createItem = (item, key) =>
             <option
                 key={key}
@@ -95,7 +98,7 @@ class Home extends Component {
                             </li>
                         </ul>
                     </div>
-                    <HistoryChart period={this.state.period} siglas={this.state.siglas} />
+                    <HistoryChart key={1} period={this.state.period} siglas={this.state.siglas} />
                 </div>
                 <News/>
                 <div className="row col-sm-12">

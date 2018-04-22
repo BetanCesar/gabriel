@@ -8,22 +8,24 @@ class HistoryChart extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {siglas: "ME", period: "one-week", stock:[], apiKey:"http://192.168.1.123:3500/api"};
+        this.state = {siglas: "ME", period: "one-week", stock:[], apiKey:"http://localhost:3500/api"};
 
     }
 
     componentWillMount(){
-        console.log(this.props.siglas);
-        this.setState({siglas:this.props.siglas});
-        this.setState({period:this.props.period});
         this.getStock();
     }
 
-    componentWillReceiveProps(){
-        console.log(this.props.siglas);
-        this.setState({siglas:this.props.siglas});
-        this.setState({period:this.props.period});
-        this.getStock();
+    componentWillReceiveProps(nextProps){
+            console.log(nextProps.siglas);
+            this.setState({siglas:nextProps.siglas}, () => {
+                this.setState({period:nextProps.period}, () => {
+                    console.log(this.state.siglas);
+                    console.log(this.state.period);
+                    this.getStock();
+                });
+            })
+
     }
 
 
