@@ -15,6 +15,7 @@ class Home extends Component {
         this.state = {
             value: 'Indice de Precios y Cotizaciones',
             siglas: 'ME',
+            period: '1',
             options: [
                 {name: 'Indice de Precios y Cotizaciones', value: 'Indice de Precios y Cotizaciones', siglas: 'ME'},
                 {name: 'Arca  Continental', value: 'Arca Continental', siglas: 'AC'},
@@ -39,6 +40,11 @@ class Home extends Component {
             }
         });
         this.setState({value: value});
+        this.setState({siglas: sigla});
+    }
+
+    setPeriod(per){
+        this.setState({period: per});
     }
 
     render() {
@@ -74,7 +80,7 @@ class Home extends Component {
                     <div className="hr-divider m-y-md predictionsDiv">
                         <ul className="nav nav-pills hr-divider-content hr-divider-nav" role="tablist">
                             <li className="active" role="presentation">
-                                <a href="#sales" role="tab" data-toggle="tab" aria-controls="sales">Semana</a>
+                                <a href="#week" role="tab" data-toggle="tab" aria-controls="sales">Semana</a>
                             </li>
                             <li role="presentation">
                                 <a href="#inventory" role="tab" data-toggle="tab"
@@ -88,7 +94,7 @@ class Home extends Component {
                             </li>
                         </ul>
                     </div>
-                    <HistoryChart/>
+                    <HistoryChart period={this.state.period} siglas={this.state.siglas} />
                 </div>
                 <News/>
                 <div className="row col-sm-12">
