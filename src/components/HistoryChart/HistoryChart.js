@@ -17,11 +17,8 @@ class HistoryChart extends Component {
     }
 
     componentWillReceiveProps(nextProps){
-            console.log(nextProps.siglas);
             this.setState({siglas:nextProps.siglas}, () => {
                 this.setState({period:nextProps.period}, () => {
-                    console.log(this.state.siglas);
-                    console.log(this.state.period);
                     this.getStock();
                 });
             })

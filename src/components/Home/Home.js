@@ -50,7 +50,6 @@ class Home extends Component {
     }
 
     render() {
-        console.log(this.state.siglas);
         const createItem = (item, key) =>
             <option
                 key={key}
@@ -105,7 +104,7 @@ class Home extends Component {
                     <div className="hr-divider m-t m-b-md">
                         <h3 className="hr-divider-content hr-divider-heading">Proyecciones</h3>
                     </div>
-                    <Proyections/>
+                    <Proyections siglas={this.state.siglas}/>
                 </div>
                 <div className="row col-sm-12">
                     <div className="hr-divider m-t m-b-md">
