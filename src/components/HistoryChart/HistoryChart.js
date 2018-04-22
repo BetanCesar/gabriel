@@ -8,7 +8,21 @@ class HistoryChart extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {siglas: this.props.siglas, period: this.props.period, stock:[], apiKey:"http://192.168.1.123:3500/api"};
+        this.state = {siglas: [], period: [], stock:[], apiKey:"http://192.168.1.123:3500/api"};
+
+    }
+
+    componentWillMount(){
+        console.log(this.props.siglas);
+        this.setState({siglas:this.props.siglas});
+        this.setState({period:this.props.period});
+        this.getStock();
+    }
+
+    componentWillReceiveProps(){
+        console.log(this.props.siglas);
+        this.setState({siglas:this.props.siglas});
+        this.setState({period:this.props.period});
         this.getStock();
     }
 
@@ -26,12 +40,13 @@ class HistoryChart extends Component {
     render() {
         let stockData = [];
         if(this.state.stock){
+            //console.log(this.state.siglas);
             this.state.stock.forEach(function(stock) {
                 stockData.push(stock);
             });
             stockData =[['Day', this.state.siglas], ...stockData];
         }
-        console.log(this.state.siglas);
+
         return (
            <div className="historyChart">
                <Chart
