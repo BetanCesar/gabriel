@@ -8,7 +8,7 @@ class HistoryChart extends Component {
 
     constructor(props) {
         super(props);
-        this.state = {siglas: [], period: [], stock:[], apiKey:"http://192.168.1.123:3500/api"};
+        this.state = {siglas: "ME", period: "one-week", stock:[], apiKey:"http://192.168.1.123:3500/api"};
 
     }
 

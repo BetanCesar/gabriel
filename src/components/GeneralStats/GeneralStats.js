@@ -157,7 +157,7 @@ class GeneralStats extends Component {
                                         position: 'bottom'
                                     }
                                 }}
-                                graph_id="Gold"
+                                graph_id="GoldMini"
                                 width="100%"
                                 height="200px"
                                 legend_toggle
@@ -204,7 +204,7 @@ class GeneralStats extends Component {
                                         position: 'bottom'
                                     }
                                 }}
-                                graph_id="Oil"
+                                graph_id="OilMini"
                                 width="100%"
                                 height="200px"
                                 legend_toggle
@@ -251,7 +251,7 @@ class GeneralStats extends Component {
                                         position: 'bottom'
                                     }
                                 }}
-                                graph_id="USD"
+                                graph_id="USDMini"
                                 width="100%"
                                 height="200px"
                                 legend_toggle
@@ -296,7 +296,7 @@ class GeneralStats extends Component {
                                     },
                                     legend: 'none'
                                 }}
-                                graph_id="IPC"
+                                graph_id="IPCMini"
                                 width="100%"
                                 height="200px"
 
