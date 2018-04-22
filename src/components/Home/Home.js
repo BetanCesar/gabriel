@@ -15,7 +15,7 @@ class Home extends Component {
         this.state = {
             value: 'Indice de Precios y Cotizaciones',
             siglas: 'ME',
-            period: '1',
+            period: 'one-week',
             options: [
                 {name: 'Indice de Precios y Cotizaciones', value: 'Indice de Precios y Cotizaciones', siglas: 'ME'},
                 {name: 'Arca  Continental', value: 'Arca Continental', siglas: 'AC'},
@@ -43,8 +43,8 @@ class Home extends Component {
         this.setState({siglas: sigla});
     }
 
-    setPeriod(per){
-        this.setState({period: per});
+    handleClick(param, text) {
+        this.setState({period: text});
     }
 
     render() {
@@ -56,6 +56,7 @@ class Home extends Component {
             >
                 {item.siglas} - {item.name}
             </option>;
+
         return (
             <div className="container-fluid container-fluid-spacious">
                 <FinanceInfo/>
@@ -80,17 +81,17 @@ class Home extends Component {
                     <div className="hr-divider m-y-md predictionsDiv">
                         <ul className="nav nav-pills hr-divider-content hr-divider-nav" role="tablist">
                             <li className="active" role="presentation">
-                                <a href="#week" role="tab" data-toggle="tab" aria-controls="sales">Semana</a>
+                                <a href="#one-week" onClick={(param) => this.handleClick(param, 'one-week')} role="tab" data-toggle="tab" aria-controls="sales">Semana</a>
                             </li>
                             <li role="presentation">
-                                <a href="#inventory" role="tab" data-toggle="tab"
+                                <a href="#one-month" onClick={(param) => this.handleClick(param, 'one-month')} role="tab" data-toggle="tab"
                                    aria-controls="inventory">Mes</a>
                             </li>
                             <li role="presentation">
-                                <a href="#profit" role="tab" data-toggle="tab" aria-controls="profit">6 meses</a>
+                                <a href="#six-months" onClick={(param) => this.handleClick(param, 'six-months')} role="tab" data-toggle="tab" aria-controls="profit">6 meses</a>
                             </li>
                             <li role="presentation">
-                                <a href="#profit" role="tab" data-toggle="tab" aria-controls="profit">Año</a>
+                                <a href="#one-year" onClick={(param) => this.handleClick(param, 'one-year')} role="tab" data-toggle="tab" aria-controls="profit">Año</a>
                             </li>
                         </ul>
                     </div>

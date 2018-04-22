@@ -17,7 +17,7 @@ class HistoryChart extends Component {
         if(this.state.siglas === 'ME'){
             this.setState({siglas: 'IPC'});
         }
-        axios.get(this.state.apiKey + "/getIndex?time=one-week&index=" + this.state.siglas)
+        axios.get(this.state.apiKey + "/getIndex?time=" + this.state.period + "&index=" + this.state.siglas)
             .then(res => {
                 this.setState({stock:res.data});
             }).catch(this.setState({stock: null}));
