@@ -8801,6 +8801,7 @@ fieldset[disabled] .datepicker table tr td span.active.disabled:hover.focus {
   padding: .125em .5em;
   font-size: 50%;
   vertical-align: middle;
+  margin-left: 10px;
 }
 .statcard-desc {
   font-size: 85%;
