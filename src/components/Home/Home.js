@@ -14,21 +14,21 @@ class Home extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            value: 'Indice de Precios y Cotizaciones',
+            value: 'Índice de Precios y Cotizaciones',
             siglas: 'ME',
             period: 'one-week',
             options: [
-                {name: 'Indice de Precios y Cotizaciones', value: 'Indice de Precios y Cotizaciones', siglas: 'ME'},
+                {name: 'Índice de Precios y Cotizaciones', value: 'Índice de Precios y Cotizaciones', siglas: 'ME'},
                 {name: 'Arca  Continental', value: 'Arca Continental', siglas: 'AC'},
                 {name: 'Alfa SAB de CV', value: 'Alfa SAB de CV', siglas: 'ALFAA'},
                 {name: 'Alsea SAB de CV', value: 'Alsea SAB de CV', siglas: 'ALSEA'},
-                {name: 'America Movil', value: 'America Movil', siglas: 'AMXL'},
+                {name: 'América Móvil', value: 'América Movil', siglas: 'AMXL'},
                 {name: 'Grupo Bimbo S.A.B. de C.V.', value: 'Grupo Bimbo S.A.B. de C.V.', siglas: 'BIMBOA'},
-                {name: 'Fomento Economico Mexicano', value: 'Fomento Economico Mexicano', siglas: 'FEMSAUBD'},
+                {name: 'Fomento Económico Mexicano', value: 'Fomento Económico Mexicano', siglas: 'FEMSAUBD'},
                 {name: 'Coca-Cola FEMSA', value: 'Coca-Cola FEMSA', siglas: 'KOFL'},
                 {name: 'LIVERPOOL', value: 'LIVERPOOL', siglas: 'LIVEPOLC-1'},
                 {name: 'Grupo Televisa', value: 'Grupo Televisa', siglas: 'TLEVISACPO'},
-                {name: 'Wal-mart de Mexico', value: 'Wal-mart de Mexico', siglas: 'WALMEX'}
+                {name: 'Wal-mart de México', value: 'Wal-mart de México', siglas: 'WALMEX'}
             ],
         };
     }
