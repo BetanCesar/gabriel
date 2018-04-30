@@ -206,18 +206,7 @@ class Proyections extends Component {
         }
         return (
             <div className="row statcards">
-                <div className="col-sm-6 col-md-3 m-b">
-                    <div className="statcard">
-                        <div className="p-a">
-                            <span className="statcard-desc">Final del día</span>
-                            <h2 className="statcard-number">
-                                {predictions.pred_1.toFixed(2)}
-                                <small className={dayPercentageStyle.join(" ")}>{dayPercentage}%</small>
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-sm-6 col-md-3 m-b">
+                <div className="col-sm-6 col-md-4 m-b proyectionCard">
                     <div className="statcard">
                         <div className="p-a">
                             <span className="statcard-desc">7 días</span>
@@ -228,7 +217,7 @@ class Proyections extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-6 col-md-3 m-b">
+                <div className="col-sm-6 col-md-4 m-b proyectionCard">
                     <div className="statcard">
                         <div className="p-a">
                             <span className="statcard-desc">14 días</span>
@@ -239,7 +228,7 @@ class Proyections extends Component {
                         </div>
                     </div>
                 </div>
-                <div className="col-sm-6 col-md-3 m-b">
+                <div className="col-sm-6 col-md-4 m-b proyectionCard">
                     <div className="statcard">
                         <div className="p-a">
                             <span className="statcard-desc">1 mes</span>
